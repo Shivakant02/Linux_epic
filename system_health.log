@@ -1,0 +1,57 @@
+
+---------------------------------------------------
+System Health Report - Tue Jan 28 08:34:15 IST 2025
+---------------------------------------------------
+### CPU Details ###
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+---------------------------------------------------
+### Memory Details ###
+               total        used        free      shared  buff/cache   available
+Mem:           3.5Gi       264Mi       3.1Gi       0.0Ki       126Mi       3.1Gi
+Swap:          1.0Gi          0B       1.0Gi
+---------------------------------------------------
+### Disk Details ###
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdc        251G  2.2G  236G   1% /
+none            1.8G   28K  1.8G   1% /mnt/wslg
+none            1.8G  4.0K  1.8G   1% /mnt/wsl
+tools           376G  254G  122G  68% /init
+none            1.8G     0  1.8G   0% /run
+none            1.8G     0  1.8G   0% /run/lock
+none            1.8G     0  1.8G   0% /run/shm
+none            1.8G     0  1.8G   0% /run/user
+tmpfs           1.8G     0  1.8G   0% /sys/fs/cgroup
+drivers         376G  254G  122G  68% /usr/lib/wsl/drivers
+lib             376G  254G  122G  68% /usr/lib/wsl/lib
+none            1.8G   76K  1.8G   1% /mnt/wslg/versions.txt
+none            1.8G   76K  1.8G   1% /mnt/wslg/doc
+drvfs           376G  254G  122G  68% /mnt/c
+drvfs           100G   20G   81G  20% /mnt/d
+---------------------------------------------------
+### Network Activity ###
+        RX packets 184  bytes 16448 (16.4 KB)
+        RX packets 0  bytes 0 (0.0 B)
+        TX packets 14  bytes 1076 (1.0 KB)
+        TX packets 0  bytes 0 (0.0 B)
+---------------------------------------------------
+### Top 10 CPU-Consuming Processes ###
+  PID  PPID CMD                         %MEM %CPU
+    1     0 /init                        0.0  0.0
+    7     1 /init                        0.0  0.0
+    8     7 /init                        0.0  0.0
+    9     8 -bash                        0.1  0.0
+   57     9 /bin/bash ./sys_health.sh    0.1  0.0
+   67    57 ps -eo pid,ppid,cmd,%mem,%c  0.0  0.0
+   68    57 head -11                     0.0  0.0
+---------------------------------------------------
+### Top 5 Memory-Consuming Processes ###
+  PID  PPID CMD                         %MEM %CPU
+    9     8 -bash                        0.1  0.0
+   57     9 /bin/bash ./sys_health.sh    0.1  0.0
+   69    57 ps -eo pid,ppid,cmd,%mem,%c  0.0  0.0
+    1     0 /init                        0.0  0.0
+   70    57 head -6                      0.0  0.0
+---------------------------------------------------
+### System Uptime ###
+ 08:34:15 up 22 min,  0 users,  load average: 0.00, 0.01, 0.00
+---------------------------------------------------
