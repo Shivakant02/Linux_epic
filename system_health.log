@@ -54,3 +54,62 @@ drvfs           100G   20G   81G  20% /mnt/d
 ### System Uptime ###
  14:38:36 up  6:27,  0 users,  load average: 0.04, 0.03, 0.00
 ---------------------------------------------------
+---------------------------------------------------
+System Health Report - Tue Jan 28 21:11:02 IST 2025
+---------------------------------------------------
+### CPU Details ###
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+---------------------------------------------------
+### Memory Details ###
+               total        used        free      shared  buff/cache   available
+Mem:           3.5Gi       279Mi       3.1Gi       0.0Ki       147Mi       3.1Gi
+Swap:          1.0Gi          0B       1.0Gi
+---------------------------------------------------
+### Disk Details ###
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdc        251G  2.4G  236G   1% /
+none            1.8G   28K  1.8G   1% /mnt/wslg
+none            1.8G  4.0K  1.8G   1% /mnt/wsl
+tools           376G  254G  122G  68% /init
+none            1.8G  8.0K  1.8G   1% /run
+none            1.8G     0  1.8G   0% /run/lock
+none            1.8G     0  1.8G   0% /run/shm
+none            1.8G     0  1.8G   0% /run/user
+tmpfs           1.8G     0  1.8G   0% /sys/fs/cgroup
+drivers         376G  254G  122G  68% /usr/lib/wsl/drivers
+lib             376G  254G  122G  68% /usr/lib/wsl/lib
+none            1.8G   76K  1.8G   1% /mnt/wslg/versions.txt
+none            1.8G   76K  1.8G   1% /mnt/wslg/doc
+drvfs           376G  254G  122G  68% /mnt/c
+drvfs           100G   20G   81G  20% /mnt/d
+---------------------------------------------------
+### Network Activity ###
+        RX packets 4  bytes 380 (380.0 B)
+        RX packets 0  bytes 0 (0.0 B)
+        TX packets 12  bytes 936 (936.0 B)
+        TX packets 0  bytes 0 (0.0 B)
+---------------------------------------------------
+### Top 10 CPU-Consuming Processes ###
+  PID  PPID CMD                         %MEM %CPU
+    1     0 /init                        0.0  0.0
+    7     1 /init                        0.0  0.0
+    8     7 /init                        0.0  0.0
+    9     8 -bash                        0.1  0.0
+   33     9 vi system_health.log         0.2  0.0
+   69     8 /usr/sbin/cron -P            0.0  0.0
+   73    69 /usr/sbin/CRON -P            0.1  0.0
+   74    73 /bin/sh -c /home/michaelmax  0.0  0.0
+   75    74 /bin/bash /home/michaelmax/  0.0  0.0
+   85    75 ps -eo pid,ppid,cmd,%mem,%c  0.0  0.0
+---------------------------------------------------
+### Top 5 Memory-Consuming Processes ###
+  PID  PPID CMD                         %MEM %CPU
+   33     9 vi system_health.log         0.2  0.0
+    9     8 -bash                        0.1  0.0
+   73    69 /usr/sbin/CRON -P            0.1  0.0
+   75    74 /bin/bash /home/michaelmax/  0.0  0.0
+   69     8 /usr/sbin/cron -P            0.0  0.0
+---------------------------------------------------
+### System Uptime ###
+ 21:11:02 up 6 min,  0 users,  load average: 0.01, 0.02, 0.00
+---------------------------------------------------
